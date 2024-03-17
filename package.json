@@ -2,7 +2,7 @@
   "name": "userscript",
   "version": "1.0.0",
   "private": true,
-  "description": "",
+  "description": "个人用，基于Tampermonkey的浏览器脚本合集",
   "author": "LU-JIEJIE",
   "license": "MIT",
   "keywords": [],

@@ -1,0 +1,17 @@
+{
+  "name": "copyable",
+  "type": "module",
+  "version": "1.2.0",
+  "description": "解除部分网站的复制限制及小尾巴，如百度文库、CSDN、哔哩哔哩专栏等。",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "start": "esno src/start.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vite-plugin-monkey": "^3.5.1"
+  }
+}

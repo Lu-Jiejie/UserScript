@@ -39,6 +39,5 @@
     "jsonc",
     "yaml",
     "toml"
-  ],
-  "git.ignoreLimitWarning": true
+  ]
 }

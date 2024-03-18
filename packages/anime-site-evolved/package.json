@@ -1,0 +1,21 @@
+{
+  "name": "anime-site-evolved",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "cheerio": "1.0.0-rc.12",
+    "https-proxy-agent": "^7.0.4",
+    "node-fetch": "^3.3.2",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vite-plugin-monkey": "^3.5.1",
+    "xlsx": "^0.18.5"
+  }
+}

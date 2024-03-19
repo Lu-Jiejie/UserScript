@@ -6,12 +6,12 @@ import { load } from 'cheerio'
 import { writeJSON } from '../utils'
 
 enum TagType {
-  general,
-  artist,
-  copyright,
-  character,
-  circle,
-  faults
+  general = 0,
+  artist = 1,
+  copyright = 3,
+  character = 4,
+  circle = 5,
+  faults = 6
 }
 
 const url = 'https://yande.re/tag?order=count'
@@ -28,6 +28,7 @@ const maxPage = 1
 const json: Record<string, string> = {}
 
 for (let i = 1; i <= maxPage; i++) {
+  console.log(`${url}&type=${TagType[tagType]}&page=${i}`)
   const res = await fetch(`${url}&type=${TagType[tagType]}&page=${i}`, { agent: new HttpsProxyAgent(proxy) })
   const body = await res.text()
   const $ = load(body)

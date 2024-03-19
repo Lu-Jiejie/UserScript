@@ -10,17 +10,19 @@ const tagsCharacterCnTable = readXLSX(path.join(__dirname, '../data/preTranslate
 const tagsGeneralCnTable = readXLSX(path.join(__dirname, '../data/preTranslate/tags_general_cn.xlsx'))
 const tagsAnyCnTable = readJSON(path.join(__dirname, '../data/preTranslate/tags_any_cn.json'))
 
-const targetTagsGeneralPath = path.join(__dirname, '../data/yande_tags_general.json')
-const targetTagsGeneralJSON = readJSON(targetTagsGeneralPath)
+const targetPath = path.join(__dirname, '../data/yande_tags_character.json')
+const targetJSON = readJSON(targetPath)
 
-for (const tag in targetTagsGeneralJSON) {
-  let tagCn = targetTagsGeneralJSON[tag]
+for (const tag in targetJSON) {
+  let tagCn = targetJSON[tag]
   if (tagCn !== 'UNTRANSLATED')
     continue
 
-  tagCn = tagsGeneralCnTable.find(row => row.tag === tag)?.right_tag_cn || tagsAnyCnTable[tag]
-  if (tagCn)
-    targetTagsGeneralJSON[tag] = tagCn
+  tagCn = tagsCharacterCnTable.find(row => row.tag === tag)?.right_tag_cn || tagsAnyCnTable[tag]
+  if (tagCn) {
+    console.log(tagCn)
+    targetJSON[tag] = tagCn
+  }
 }
 
-writeJSON(targetTagsGeneralPath, targetTagsGeneralJSON)
+writeJSON(targetPath, targetJSON)

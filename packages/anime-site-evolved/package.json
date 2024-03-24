@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "增强二次元图片网站的体验",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

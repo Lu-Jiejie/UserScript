@@ -9,10 +9,10 @@ export default defineConfig({
       userscript: {
         name: 'b站分P视频随机播放',
         icon: 'https://www.bilibili.com/favicon.ico',
-        namespace: 'https://github.com/LU-JIEJIE/bilibili-random-play',
+        namespace: 'https://github.com/LU-JIEJIE/UserScript/tree/main/packages/bilibili-random-play',
         match: ['https://www.bilibili.com/video/*'],
         author: 'lu-jiejie',
-        homepage: 'https://github.com/LU-JIEJIE/bilibili-random-play',
+        homepage: 'https://github.com/LU-JIEJIE/UserScript/tree/main/packages/bilibili-random-play',
         license: 'MIT'
       }
     })

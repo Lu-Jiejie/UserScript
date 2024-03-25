@@ -4,7 +4,7 @@ import { GM_addStyle } from '$'
 const generalTagsTableUrl = 'https://cdn.jsdelivr.net/gh/LU-JIEJIE/UserScript@main/packages/anime-site-evolved/src/data/yande_tags_general.json'
 const copyrightTagsTableUrl = 'https://cdn.jsdelivr.net/gh/LU-JIEJIE/UserScript@main/packages/anime-site-evolved/src/data/yande_tags_copyright.json'
 
-const showImageSize = () => {
+function showImageSize() {
   GM_addStyle(`
   #post-list-posts li a.directlink span.directlink-info {
     display:none;
@@ -15,7 +15,7 @@ const showImageSize = () => {
   `)
 }
 
-const bindClickToLoadRawImage = () => {
+function bindClickToLoadRawImage() {
   const img = document.querySelector('#image')
   const loadRawImageButton = document.querySelector('#highres-show') as HTMLAnchorElement
   const downloadPngButton = document.querySelector('#png') as HTMLAnchorElement
@@ -31,7 +31,7 @@ const bindClickToLoadRawImage = () => {
   })
 }
 
-const showImageHidden = () => {
+function showImageHidden() {
   const hideImageButton = document.querySelector('#blacklisted-sidebar')
   hideImageButton?.remove()
 
@@ -41,7 +41,7 @@ const showImageHidden = () => {
   })
 }
 
-const addTagTypeHeader = () => {
+function addTagTypeHeader() {
   const tagDefault = document.querySelector('div.sidebar > div:nth-child(3) > h5')
   tagDefault?.remove()
 
@@ -67,7 +67,7 @@ const addTagTypeHeader = () => {
   }
 }
 
-const translateTag = (tagLi: HTMLLIElement, tagsTable: Record<string, string>) => {
+function translateTag(tagLi: HTMLLIElement, tagsTable: Record<string, string>) {
   const tagA = tagLi.children[1] as HTMLAnchorElement
   const tag = tagA.textContent!
   const tagFormatted = tag.replaceAll(' ', '_')
@@ -75,7 +75,7 @@ const translateTag = (tagLi: HTMLLIElement, tagsTable: Record<string, string>) =
     tagA.textContent = `[${tagsTable[tagFormatted]}] ${tag}`
 }
 
-const translateTags = async () => {
+async function translateTags() {
   const generalTagsTable = await (await fetch(generalTagsTableUrl)).json() as Record<string, string>
   const copyrightTagsTable = await (await fetch(copyrightTagsTableUrl)).json() as Record<string, string>
   const tagLis = document.querySelectorAll('#tag-sidebar li') as NodeListOf<HTMLLIElement>

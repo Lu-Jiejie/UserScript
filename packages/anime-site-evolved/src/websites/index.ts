@@ -1,4 +1,4 @@
-import yande from "./yande";
+import yande from './yande'
 
 const websites = [
   yande

@@ -1,4 +1,4 @@
-import websites from "./websites";
+import websites from './websites'
 
 websites.some((website) => {
   if (website.regexp.test(window.location.href)) {

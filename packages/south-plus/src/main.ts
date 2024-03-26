@@ -1,6 +1,10 @@
-const targetHostName = 'bbs.imoutolove.me'
+import { initSettings } from './config/settings'
+import domainRedirect from './features/domainRedirect'
+import forceDesktop from './features/forceDesktop'
+import netdiskCheck from './features/netdiskCheck'
 
-const currentHostName = document.location.hostname
+initSettings()
 
-if (currentHostName !== targetHostName)
-  document.location.hostname = targetHostName
+forceDesktop()
+domainRedirect()
+netdiskCheck()

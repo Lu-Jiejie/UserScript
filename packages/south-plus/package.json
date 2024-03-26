@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "esno src/test.ts"
   },
   "devDependencies": {
     "typescript": "^5.3.3",

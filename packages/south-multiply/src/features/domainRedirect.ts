@@ -1,9 +1,9 @@
-import { GM_getValue } from '../config/settings'
+import { getValue } from '../config/settings'
 
 export default async function domainRedirect() {
-  if (!GM_getValue('domain_redirect') || GM_getValue('force_desktop'))
+  if (!getValue('domain_redirect') || getValue('force_desktop'))
     return
-  const targetDomain = GM_getValue('target_domain')
+  const targetDomain = getValue('target_domain')
   if (!targetDomain)
     return
 

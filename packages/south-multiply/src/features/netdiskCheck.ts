@@ -1,4 +1,4 @@
-import { GM_getValue } from '../config/settings'
+import { getValue } from '../config/settings'
 import { get, post } from '../utils/request'
 
 function baiduNetdiskCheck() {
@@ -35,7 +35,7 @@ function quarkNetdiskCheck() {
 }
 
 export default function netdiskCheck() {
-  if (document.location.pathname !== '/read.php' || !GM_getValue('netdisk_check'))
+  if (document.location.pathname !== '/read.php' || !getValue('netdisk_check'))
     return
   baiduNetdiskCheck()
   quarkNetdiskCheck()

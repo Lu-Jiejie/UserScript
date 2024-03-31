@@ -1,4 +1,4 @@
-import { getValue } from '../config/settings'
+import { getValue } from '../utils/storage'
 
 export default async function domainRedirect() {
   if (!getValue('domain_redirect') || getValue('force_desktop'))

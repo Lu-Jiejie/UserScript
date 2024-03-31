@@ -1,4 +1,4 @@
-import { getValue } from '../config/settings'
+import { getValue } from '../utils/storage'
 
 export default function forceDesktop() {
   if (!getValue('force_desktop'))

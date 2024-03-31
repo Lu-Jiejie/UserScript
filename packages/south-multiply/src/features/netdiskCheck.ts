@@ -1,14 +1,12 @@
-import { getValue } from '../config/settings'
+import $ from 'jquery'
 import { get, post } from '../utils/request'
+import { getValue } from '../utils/storage'
 
 function baiduNetdiskCheck() {
-  const baiduNetdiskAnchors = document.querySelectorAll<HTMLAnchorElement>(`a[href^='https://pan.baidu.com/s/']`)
-  baiduNetdiskAnchors.forEach((anchor) => {
+  $<HTMLAnchorElement>('a[href^=\'https://pan.baidu.com/s/\']').each((_, anchor) => {
     const link = anchor.href
     anchor.textContent = `${link} ⏳`
     get(link).then((responseText) => {
-      console.log(responseText.includes('不存在'))
-      console.log(responseText.includes('已失效'))
       if (responseText.includes('过期时间：') || responseText.includes('请输入提取码：'))
         anchor.textContent = `${link} ✔️`
       else
@@ -19,8 +17,7 @@ function baiduNetdiskCheck() {
 
 function quarkNetdiskCheck() {
   const checkUrl = 'https://drive.quark.cn/1/clouddrive/share/sharepage/token?pr=ucpro&fr=pc'
-  const quarkNetdiskAnchors = document.querySelectorAll<HTMLAnchorElement>(`a[href^='https://pan.quark.cn/s/']`)
-  quarkNetdiskAnchors.forEach((anchor) => {
+  $<HTMLAnchorElement>('a[href^=\'https://pan.quark.cn/s/\']').each((_, anchor) => {
     const link = anchor.href
     const shardId = link.match(/\/s\/([a-zA-Z0-9]+)(?=\?|$)/)?.[1]
     anchor.textContent = `${link} ⏳`

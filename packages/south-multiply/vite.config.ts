@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import monkey from 'vite-plugin-monkey'
+import monkey, { cdn } from 'vite-plugin-monkey'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -45,6 +45,9 @@ export default defineConfig({
           '*://*.blue-plus.net/*',
           '*://blue-plus.net/*'
         ]
+      },
+      build: {
+        externalGlobals: { jquery: cdn.jsdelivr('jQuery') }
       }
     })
   ]

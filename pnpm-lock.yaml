@@ -69,6 +69,22 @@ importers:
         specifier: ^3.5.1
         version: 3.5.1(vite@5.1.6)
 
+  packages/south-multiply:
+    dependencies:
+      jquery:
+        specifier: ^3.7.1
+        version: 3.7.1
+    devDependencies:
+      typescript:
+        specifier: ^5.3.3
+        version: 5.4.2
+      vite:
+        specifier: ^5.0.11
+        version: 5.1.6(@types/node@20.11.28)
+      vite-plugin-monkey:
+        specifier: ^3.5.1
+        version: 3.5.1(vite@5.1.6)
+
   packages/south-plus:
     devDependencies:
       typescript:
@@ -2373,6 +2389,10 @@ packages:
   /isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
+
+  /jquery@3.7.1:
+    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
+    dev: false
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}

@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import { parseQueryParams } from '../utils/url'
 import { getMyInfo } from '../utils/forum'
 import { initSettingsPanel } from './settingsPanel'

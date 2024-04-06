@@ -7,9 +7,10 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
-        icon: 'https://bbs.imoutolove.me/favicon.ico',
-        namespace: 'npm/vite-plugin-monkey',
-        match: [
+        'name': '南×',
+        'icon': 'https://bbs.imoutolove.me/favicon.ico',
+        'namespace': 'npm/vite-plugin-monkey',
+        'match': [
           '*://*.imoutolove.me/*',
           '*://imoutolove.me/*',
           // 东+
@@ -44,7 +45,8 @@ export default defineConfig({
           // 蓝+
           '*://*.blue-plus.net/*',
           '*://blue-plus.net/*'
-        ]
+        ],
+        'run-at': 'document-start'
       },
       build: {
         externalGlobals: { jquery: cdn.jsdelivr('jQuery') }

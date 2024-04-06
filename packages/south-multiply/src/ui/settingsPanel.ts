@@ -1,5 +1,5 @@
 import resetAllSettings from '../features/resetAllSettings'
-import { type BooleanKeys, type StringKeys, getValue, setValue } from '../utils/storage'
+import { type BooleanKeys, type NumberKeys, type StringKeys, getValue, setValue } from '../utils/storage'
 import { insertNewElement } from '../utils/dom'
 import { exportSettings, importSettings } from '../features/settingsHandler'
 
@@ -50,6 +50,7 @@ class Button {
   public label: string
   public type: ButtonType
   public callback: () => void
+
   constructor(label: string, type: ButtonType, callback: () => void) {
     this.label = label
     this.type = type
@@ -57,7 +58,30 @@ class Button {
   }
 }
 
-type CategoryItem = Checkbox | Input | Button
+class Select {
+  public label: string
+  public key: NumberKeys
+  public options: string[]
+  private _selected: number
+
+  constructor(label: string, key: NumberKeys, options: string[]) {
+    this.label = label
+    this.key = key
+    this.options = options
+    this._selected = getValue(key, 0)!
+  }
+
+  get selected() {
+    return this._selected
+  }
+
+  set selected(value: number) {
+    this._selected = value
+    setValue(this.key, value)
+  }
+}
+
+type CategoryItem = Checkbox | Input | Button | Select
 class Category {
   public label: string
   public key: BooleanKeys
@@ -156,7 +180,17 @@ function initCategory(parent: Element, category: Category) {
 const categories = [
   new Category('⚙️ 常规', 'category_general_expanded', [
     new Checkbox('网盘失效检查', 'netdisk_check'),
-    new Checkbox('自动完成任务', 'auto_complete_tasks')
+    new Checkbox('自动完成任务', 'auto_complete_tasks'),
+    new Checkbox('默认进入图墙模式开关', 'image_wall_default')
+  ]),
+  new Category('🔄 无缝加载', 'category_seamless_expanded', [
+    new Checkbox('无缝加载评论', 'seamless_load_comment'),
+    new Checkbox('无缝加载帖子', 'seamless_load_post'),
+    new Checkbox('无缝加载搜索结果', 'seamless_load_search')
+  ]),
+  new Category('🔞 SFW', 'category_sfw_expanded', [
+    new Checkbox('替换帖子内用户头像', 'replace_sfw_avatar'),
+    new Checkbox('隐藏帖子内图片', 'hide_post_image')
   ]),
   new Category('🔗 跳转', 'category_redirect_expanded', [
     new Checkbox('强制跳转桌面版', 'force_desktop'),

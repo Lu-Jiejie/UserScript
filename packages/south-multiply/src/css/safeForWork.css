@@ -1,0 +1,46 @@
+.avatar-container .source-avatar {
+  display: none;
+}
+
+.avatar-container:hover .source-avatar {
+  display: block;
+}
+
+.avatar-container:hover .sfw-avatar {
+  display: none;
+}
+
+.image-placeholder {
+  cursor: pointer;
+  border: dashed;
+  user-select: none;
+}
+
+.image-placeholder div {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+
+.image-placeholder div.show-text {
+  display: none;
+}
+
+.image-placeholder img {
+  display: none;
+  width: 100%;
+}
+
+.image-placeholder.show-image .show-text {
+  display: block;
+}
+
+.image-placeholder.show-image .hide-text {
+  display: none;
+}
+
+.image-placeholder.show-image img {
+  display: block;
+}

@@ -70,3 +70,11 @@ export function post(url: string, data: string, retries: number = 3, timeout: nu
     attempt()
   })
 }
+
+export async function getDocument(url: string, handler?: (doc: Document) => void): Promise<Document> {
+  const html = await get(url)
+  const parser = new DOMParser()
+  const doc = parser.parseFromString(html, 'text/html')
+  handler?.(doc)
+  return doc
+}

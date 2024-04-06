@@ -1,5 +1,5 @@
 export function parseQueryParams(search: string) {
-  const htmlString = search.match(/^\?(.+)\.html$/)?.[1]
+  const htmlString = search.match(/\?(.+)\.html$/)?.[1]
   const queryParams: Record<string, string> = {}
   if (htmlString) {
     const queryParamsPairs = htmlString.split('-')

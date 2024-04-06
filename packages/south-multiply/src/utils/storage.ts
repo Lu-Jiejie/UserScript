@@ -10,6 +10,17 @@ export const defaultStorage = {
   auto_complete_tasks: false,
   daily_tasks_last_time: 0,
   weekly_tasks_last_time: 0,
+  image_wall_default: false,
+  image_wall_default_array: [] as string[],
+
+  category_seamless_expanded: false,
+  seamless_load_comment: false,
+  seamless_load_post: false,
+  seamless_load_search: false,
+
+  category_sfw_expanded: false,
+  replace_sfw_avatar: false,
+  hide_post_image: false,
 
   category_redirect_expanded: false,
   force_desktop: false,
@@ -22,6 +33,8 @@ export const defaultStorage = {
 export type StorageKeys = typeof defaultStorage
 export type BooleanKeys = KeysOfType<StorageKeys, boolean>
 export type StringKeys = KeysOfType<StorageKeys, string>
+export type NumberKeys = KeysOfType<StorageKeys, number>
+export type ArrayKeys = KeysOfType<StorageKeys, string[]>
 
 export function setValue<K extends keyof StorageKeys>(key: K, value: StorageKeys[K]): void {
   GM_setValue(key, value)

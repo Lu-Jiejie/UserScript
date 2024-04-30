@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "esno src/test.ts"
+    "test": "esno src/test.ts",
+    "release": "esno ../../scripts/release.ts south-multiply"
   },
   "dependencies": {
     "jquery": "^3.7.1"

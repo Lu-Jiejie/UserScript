@@ -5,6 +5,9 @@ module.exports = antfu(
     ignores: [
       // eslint ignore globs here
     ],
+    formatters: {
+      markdown: 'prettier',
+    },
   },
   {
     rules: {

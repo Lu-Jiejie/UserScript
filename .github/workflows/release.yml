@@ -9,6 +9,7 @@ on:
   push:
     tags:
       - 'v*'
+      - '*-v*'
 
 jobs:
   release:
@@ -20,8 +21,18 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 20.x
 
-      - run: npx changelogithub # or changelogithub@0.12 if ensure the stable result
+      - name: Extract and format tag name
+        id: format_tag
+        shell: bash
+        run: |
+          TAG_NAME=${GITHUB_REF#refs/tags/}
+          VERSION=$(echo $TAG_NAME | awk -F- '{print $NF}')
+          PROJECT_NAME=$(echo $TAG_NAME | awk -F- '{$NF=""; print $0}' | sed 's/-/ /g' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1)) substr($i,2)}}1')
+          FORMATTED_TAG_NAME="$PROJECT_NAME $VERSION"
+          echo "FORMATTED_TAG_NAME=$FORMATTED_TAG_NAME" >> $GITHUB_ENV
+
+      - run: npx changelogithub --name "${{ env.FORMATTED_TAG_NAME }}"
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

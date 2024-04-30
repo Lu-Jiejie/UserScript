@@ -7,7 +7,8 @@ function baiduNetdiskCheck() {
     const link = anchor.href
     anchor.textContent = `${link} ⏳`
     get(link).then((responseText) => {
-      if (responseText.includes('过期时间：') || responseText.includes('请输入提取码：'))
+      console.log(responseText)
+      if (responseText.includes('过期时间') || responseText.includes('请输入提取码'))
         anchor.textContent = `${link} ✔️`
       else
         anchor.textContent = `${link} ❌️`

@@ -27,7 +27,7 @@ export function get(url: string, retries: number = 3, timeout: number = 5000): P
           else {
             reject(new Error(`Request to ${url} timed out`))
           }
-        }
+        },
       })
     }
 
@@ -63,7 +63,7 @@ export function post(url: string, data: string, retries: number = 3, timeout: nu
           else {
             reject(new Error(`Request to ${url} timed out`))
           }
-        }
+        },
       })
     }
 

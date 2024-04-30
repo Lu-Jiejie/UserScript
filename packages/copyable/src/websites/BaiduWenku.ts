@@ -22,7 +22,7 @@ const BaiduWenku: Website = {
         return
       (document.querySelector('.reader-copy-button') as HTMLDivElement).click()
     })
-  }
+  },
 }
 
 export default BaiduWenku

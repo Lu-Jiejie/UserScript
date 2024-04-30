@@ -26,10 +26,10 @@ export default defineConfig({
           // 腾讯文档
           '*://docs.qq.com/doc/*',
           // 道客巴巴
-          '*://*.doc88.com/*'
+          '*://*.doc88.com/*',
         ],
-        grant: ['unsafeWindow']
-      }
-    })
-  ]
+        grant: ['unsafeWindow'],
+      },
+    }),
+  ],
 })

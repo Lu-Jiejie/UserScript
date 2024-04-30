@@ -4,7 +4,7 @@ import { parseQueryParams } from './url'
 export function getMyInfo() {
   const myUid = $('#menu_profile a[href^="u.php?action-show-uid-"]').attr('href')?.match(/uid-(\d+)/)?.[1]
   return {
-    uid: myUid
+    uid: myUid,
   }
 }
 
@@ -19,7 +19,7 @@ export function getPostInfo() {
     categoryId,
     postId,
     currentPage,
-    pages
+    pages,
   }
 }
 
@@ -33,7 +33,7 @@ export function getForumInfo() {
     categoryId: queryParams.fid,
     type: queryParams.type,
     currentPage,
-    pages
+    pages,
   }
 }
 
@@ -46,6 +46,6 @@ export function getSearchInfo() {
   return {
     keyword: queryParams.keyword,
     currentPage,
-    pages
+    pages,
   }
 }

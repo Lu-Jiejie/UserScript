@@ -13,8 +13,8 @@ export default defineConfig({
         match: ['https://www.bilibili.com/video/*'],
         author: 'lu-jiejie',
         homepage: 'https://github.com/LU-JIEJIE/UserScript/tree/main/packages/bilibili-random-play',
-        license: 'MIT'
-      }
-    })
-  ]
+        license: 'MIT',
+      },
+    }),
+  ],
 })

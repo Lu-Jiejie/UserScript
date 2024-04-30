@@ -119,7 +119,7 @@ export async function seamlessLoadComment() {
     },
     Failed: (divider, nextPage) => {
       divider.text(`第${nextPage}页加载失败`)
-    }
+    },
   }, docPreprocess)
 }
 
@@ -146,7 +146,7 @@ export function seamlessLoadPost() {
     },
     Failed: (divider, nextPage) => {
       divider.find('td').text(`第${nextPage}页加载失败`)
-    }
+    },
   })
 }
 
@@ -173,6 +173,6 @@ export function seamlessLoadSearch() {
     },
     Failed: (divider, nextPage) => {
       divider.find('td').text(`第${nextPage}页加载失败`)
-    }
+    },
   })
 }

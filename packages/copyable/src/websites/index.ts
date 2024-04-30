@@ -13,7 +13,7 @@ const websites = [
   Examcoo,
   Feishu,
   QQDoc,
-  Doc88
+  Doc88,
 ]
 
 export default websites

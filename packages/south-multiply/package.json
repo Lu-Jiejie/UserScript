@@ -1,22 +1,22 @@
 {
   "name": "south-multiply",
-  "private": true,
-  "version": "1.0.0",
-  "description": "南+（south-plus）论坛使用体验优化脚本。",
   "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "南+（south-plus）论坛使用体验优化脚本。",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "esno src/test.ts"
   },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
     "typescript": "^5.4.3",
     "vite": "^5.2.8",
     "vite-plugin-monkey": "^3.5.2"
-  },
-  "dependencies": {
-    "jquery": "^3.7.1"
   }
 }

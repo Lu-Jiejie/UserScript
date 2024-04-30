@@ -8,7 +8,7 @@ const Doc88: Website = {
     setTimeout(() => {
       console.log(unsafeWindow.Config.vip)
     }, 2000)
-  }
+  },
 }
 
 export default Doc88

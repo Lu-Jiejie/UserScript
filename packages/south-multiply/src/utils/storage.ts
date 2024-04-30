@@ -27,7 +27,7 @@ export const defaultStorage = {
   domain_redirect: false,
   target_domain: '',
 
-  category_about_expanded: false
+  category_about_expanded: false,
 }
 
 export type StorageKeys = typeof defaultStorage

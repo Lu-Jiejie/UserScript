@@ -13,8 +13,8 @@ export default defineConfig({
         match: ['*://yande.re/*'],
         author: 'lu-jiejie',
         homepage: 'https://github.com/LU-JIEJIE/UserScript/tree/main/packages/anime-site-evolved',
-        license: 'MIT'
-      }
-    })
-  ]
+        license: 'MIT',
+      },
+    }),
+  ],
 })

@@ -11,7 +11,7 @@ enum TagType {
   copyright = 3,
   character = 4,
   circle = 5,
-  faults = 6
+  faults = 6,
 }
 
 const url = 'https://yande.re/tag?order=count'

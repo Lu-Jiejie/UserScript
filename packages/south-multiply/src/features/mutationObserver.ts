@@ -23,6 +23,6 @@ export default function mutationObserver() {
   })
   observer.observe(document.documentElement, {
     childList: true,
-    subtree: true
+    subtree: true,
   })
 }

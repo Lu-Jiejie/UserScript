@@ -5,7 +5,7 @@ const BilibiliRead: Website = {
   regexp: /www.bilibili.com\/read/,
   handler: () => {
     stopCopyPropagation()
-  }
+  },
 }
 
 export default BilibiliRead

@@ -181,27 +181,27 @@ const categories = [
   new Category('⚙️ 常规', 'category_general_expanded', [
     new Checkbox('网盘失效检查', 'netdisk_check'),
     new Checkbox('自动完成任务', 'auto_complete_tasks'),
-    new Checkbox('默认进入图墙模式开关', 'image_wall_default')
+    new Checkbox('默认进入图墙模式开关', 'image_wall_default'),
   ]),
   new Category('🔄 无缝加载', 'category_seamless_expanded', [
     new Checkbox('无缝加载评论', 'seamless_load_comment'),
     new Checkbox('无缝加载帖子', 'seamless_load_post'),
-    new Checkbox('无缝加载搜索结果', 'seamless_load_search')
+    new Checkbox('无缝加载搜索结果', 'seamless_load_search'),
   ]),
   new Category('🔞 SFW', 'category_sfw_expanded', [
     new Checkbox('替换帖子内用户头像', 'replace_sfw_avatar'),
-    new Checkbox('隐藏帖子内图片', 'hide_post_image')
+    new Checkbox('隐藏帖子内图片', 'hide_post_image'),
   ]),
   new Category('🔗 跳转', 'category_redirect_expanded', [
     new Checkbox('强制跳转桌面版', 'force_desktop'),
     new Checkbox('重定向到指定域名', 'domain_redirect'),
-    new Input('指定域名', 'target_domain')
+    new Input('指定域名', 'target_domain'),
   ]),
   new Category('ℹ️ 关于', 'category_about_expanded', [
     new Button('导出设置', 'primary', exportSettings),
     new Button('导入设置', 'primary', importSettings),
-    new Button('初始化所有设置', 'danger', resetAllSettings)
-  ])
+    new Button('初始化所有设置', 'danger', resetAllSettings),
+  ]),
 ]
 
 export function initSettingsPanel() {

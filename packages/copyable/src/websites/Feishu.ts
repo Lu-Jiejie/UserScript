@@ -5,7 +5,7 @@ const Feishu: Website = {
   regexp: /feishu.cn/,
   handler: () => {
     stopCopyPropagation()
-  }
+  },
 }
 
 export default Feishu

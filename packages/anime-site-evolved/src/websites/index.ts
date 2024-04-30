@@ -1,7 +1,7 @@
 import yande from './yande'
 
 const websites = [
-  yande
+  yande,
 ]
 
 export default websites

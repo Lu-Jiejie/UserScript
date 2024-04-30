@@ -51,7 +51,7 @@ function addTagTypeHeader() {
     copyright: '版权',
     character: '角色',
     circle: '社团',
-    faults: '缺陷'
+    faults: '缺陷',
   }
 
   for (const tagType in tagTypes) {
@@ -100,7 +100,7 @@ const yande: Website = {
     showImageHidden()
     addTagTypeHeader()
     translateTags()
-  }
+  },
 }
 
 export default yande

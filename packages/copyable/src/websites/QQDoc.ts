@@ -13,7 +13,7 @@ const QQDoc: Website = {
       const selectText = unsafeWindow.pad.editor.getCopyContent().plain
       navigator.clipboard.writeText(selectText)
     })
-  }
+  },
 }
 
 export default QQDoc

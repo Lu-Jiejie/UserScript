@@ -45,13 +45,13 @@ export default defineConfig({
           '*://snow-plus.net/*',
           // 蓝+
           '*://*.blue-plus.net/*',
-          '*://blue-plus.net/*'
+          '*://blue-plus.net/*',
         ],
-        'run-at': 'document-start'
+        'run-at': 'document-start',
       },
       build: {
-        externalGlobals: { jquery: cdn.jsdelivr('jQuery') }
-      }
-    })
-  ]
+        externalGlobals: { jquery: cdn.jsdelivr('jQuery') },
+      },
+    }),
+  ],
 })

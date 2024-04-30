@@ -1,8 +1,8 @@
 {
   "name": "anime-site-evolved",
-  "private": true,
-  "version": "1.0.0",
   "type": "module",
+  "version": "1.0.0",
+  "private": true,
   "description": "增强二次元图片网站的体验",
   "scripts": {
     "dev": "vite",

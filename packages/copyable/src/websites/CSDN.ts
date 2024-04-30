@@ -6,7 +6,7 @@ const CSDN: Website = {
   handler: () => {
     stopCopyPropagation()
     enableCssUserSelect()
-  }
+  },
 }
 
 export default CSDN

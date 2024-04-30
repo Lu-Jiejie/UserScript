@@ -6,7 +6,7 @@ const Examcoo: Website = {
   handler: () => {
     stopSelectStartPropagation()
     enableCssUserSelect()
-  }
+  },
 }
 
 export default Examcoo

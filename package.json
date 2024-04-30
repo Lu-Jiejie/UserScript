@@ -8,7 +8,8 @@
   "keywords": [],
   "scripts": {
     "lint": "eslint .",
-    "release": "esno scripts/release.ts"
+    "release": "esno scripts/release.ts",
+    "build": "esno scripts/build.ts"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.3",

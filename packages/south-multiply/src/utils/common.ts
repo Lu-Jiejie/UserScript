@@ -1,5 +1,5 @@
 export function throttle<T extends (...args: any[]) => void>(callback: T, delay: number): T {
-  let timer: number | null = null
+  let timer: ReturnType<typeof setTimeout> | null = null
   return ((...args: Parameters<T>) => {
     if (!timer) {
       callback(...args)

@@ -10,6 +10,7 @@ export default defineConfig({
         'name': '南×',
         'icon': 'https://bbs.imoutolove.me/favicon.ico',
         'namespace': 'npm/vite-plugin-monkey',
+        'license': 'MIT',
         'match': [
           '*://*.imoutolove.me/*',
           '*://imoutolove.me/*',

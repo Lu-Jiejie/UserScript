@@ -17,10 +17,10 @@ if (!packageName) {
 
 const packagePath = path.join(__dirname, '..', 'packages', packageName)
 const commitMessage = `"chore(${packageName}): release v%s"`
-const tagName = `"${formatPackageName(packageName)} v%s"`
+const tagName = `"${packageName.toLocaleLowerCase()}-v%s"`
 
 try {
-  execSync(`npx bumpp --no-push --commit ${commitMessage} --tag ${tagName}`, {
+  execSync(`npx bumpp --commit ${commitMessage} --tag ${tagName}`, {
     stdio: 'inherit',
     cwd: packagePath,
   })

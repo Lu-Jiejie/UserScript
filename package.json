@@ -19,6 +19,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.1",
     "esno": "^4.7.0",
+    "flowmit": "^1.0.1",
     "fs-extra": "^11.2.0",
     "typescript": "^5.4.2"
   }

@@ -109,18 +109,6 @@ importers:
         specifier: ^3.5.2
         version: 3.5.2(vite@5.2.10(@types/node@20.11.28))
 
-  packages/south-plus:
-    devDependencies:
-      typescript:
-        specifier: ^5.3.3
-        version: 5.4.2
-      vite:
-        specifier: ^5.0.11
-        version: 5.1.6(@types/node@20.11.28)
-      vite-plugin-monkey:
-        specifier: ^3.5.1
-        version: 3.5.1(vite@5.1.6)
-
 packages:
 
   '@aashutoshrathi/word-wrap@1.2.6':
@@ -4577,18 +4565,6 @@ snapshots:
       picocolors: 1.0.0
       systemjs: 6.14.3
     optionalDependencies:
-      vite: 5.1.6(@types/node@20.11.28)
-
-  vite-plugin-monkey@3.5.1(vite@5.1.6):
-    dependencies:
-      acorn-walk: 8.3.2
-      cross-spawn: 7.0.3
-      htmlparser2: 9.1.0
-      magic-string: 0.30.8
-      mrmime: 1.0.1
-      open: 9.1.0
-      picocolors: 1.0.0
-      systemjs: 6.14.3
       vite: 5.1.6(@types/node@20.11.28)
 
   vite-plugin-monkey@3.5.2(vite@5.2.10(@types/node@20.11.28)):

@@ -8,6 +8,7 @@ export default defineConfig({
       entry: 'src/main.ts',
       userscript: {
         name: '解除复制限制',
+        author: 'lu-jiejie',
         namespace: 'https://github.com/LU-JIEJIE/copyable',
         homepage: 'https://github.com/LU-JIEJIE/copyable',
         license: 'MIT',

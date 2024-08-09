@@ -8,6 +8,7 @@ export default defineConfig({
       entry: 'src/main.ts',
       userscript: {
         'name': '南×',
+        'author': 'lu-jiejie',
         'icon': 'https://bbs.imoutolove.me/favicon.ico',
         'namespace': 'npm/vite-plugin-monkey',
         'license': 'MIT',

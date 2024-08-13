@@ -15,9 +15,9 @@
     "jquery": "^3.7.1"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.29",
-    "typescript": "^5.4.3",
-    "vite": "^5.2.8",
-    "vite-plugin-monkey": "^3.5.2"
+    "@types/jquery": "^3.5.30",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "vite-plugin-monkey": "^4.0.6"
   }
 }

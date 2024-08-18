@@ -1,2 +1,5 @@
-// @ts-expect-error isolatedModules
-console.log('hello world')
+import hrefWithoutWarning from './module/hrefWithoutWarning'
+import replyFromLinks from './module/replyFromLinks'
+
+replyFromLinks()
+hrefWithoutWarning()

@@ -11,7 +11,7 @@ export default defineConfig({
         author: 'lu-jiejie',
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.google.com/'],
+        match: ['*://jbbs.shitaraba.net/bbs/read.cgi/*'],
       },
     }),
   ],

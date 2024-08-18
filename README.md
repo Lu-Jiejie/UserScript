@@ -65,6 +65,18 @@
         <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fanime-site-evolved%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
       </td>
     </tr>
+    <tr>
+      <td><a href="./packages/shitaraba-evolved/">したらば论坛增强</a></td>
+      <td>したらば论坛增强脚本。</td>
+      <td>
+        <a href="https://lu-jiejie.github.io/UserScript/shitaraba-evolved.user.js">GitHub</a>
+        <span>|</span>
+        <a href="https://greasyfork.org/zh-CN/scripts/504173-したらば论坛增强">GreekFork</a>
+      </td>
+      <td>
+        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fshitaraba-evolved%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
+      </td>
+    </tr>
   </tbody>
 
 </table>

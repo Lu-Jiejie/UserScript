@@ -7,7 +7,7 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
-        name: '二次元图片网站增强',
+        name: 'したらば论坛增强',
         author: 'lu-jiejie',
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'npm/vite-plugin-monkey',

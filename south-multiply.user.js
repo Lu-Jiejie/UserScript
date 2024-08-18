@@ -2,7 +2,7 @@
 // @name         南×
 // @namespace    npm/vite-plugin-monkey
 // @version      1.0.1
-// @author       monkey
+// @author       lu-jiejie
 // @description  南+（south-plus）论坛使用体验优化脚本。
 // @license      MIT
 // @icon         https://bbs.imoutolove.me/favicon.ico
@@ -48,10 +48,7 @@
 
   var __defProp = Object.defineProperty;
   var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-  var __publicField = (obj, key, value) => {
-    __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-    return value;
-  };
+  var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
   function parseQueryParams(search) {
     var _a;
     const htmlString = (_a = search.match(/\?(.+)\.html$/)) == null ? void 0 : _a[1];

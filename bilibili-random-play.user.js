@@ -84,14 +84,12 @@
     prevButton.addEventListener("click", () => {
       if (isRandom)
         playNext(-1);
-      else
-        videoList[videoList.length - 1].click();
+      else videoList[videoList.length - 1].click();
     });
     nextButton.addEventListener("click", () => {
       if (isRandom)
         playNext();
-      else
-        videoList[0].click();
+      else videoList[0].click();
     });
   }
   function prevButtonEvent(e) {

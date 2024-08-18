@@ -6,9 +6,65 @@
 
 ## 脚本列表
 
-| 脚本                                                   | 简介                                                       |                                                                                                     安装                                                                                                      |                                                                                            版本                                                                                             |
-| ------------------------------------------------------ | ---------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [b站分P视频随机播放](./packages/bilibili-random-play/) | 为B站分P视频添加随机播放功能，听歌软件怎么能没有随机播放？ | [GitHub](<[bilibili-random-play.user.js](https://github.com/Lu-Jiejie/UserScript/blob/gh-pages/bilibili-random-play.user.js)>) \| [GreekFork](https://greasyfork.org/zh-CN/scripts/469248-b站分p视频随机播放) | ![GitHub package.json version](https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fbilibili-random-play%2Fpackage.json&style=flat&label=%20&color=%23eee) |
-| [解除复制限制](./packages/copyable/)                   | 解除部分网站的复制限制及小尾巴，重生之我是CV大师。         |                                  [GitHub](https://lu-jiejie.github.io/UserScript/copyable.user.js) \| [GreekFork](https://greasyfork.org/zh-CN/scripts/489501-解除复制限制)                                   |       ![GitHub package.json version](https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fcopyable%2Fpackage.json&style=flat&label=%20&color=%23eee)       |
-| [南x](./packages/south-multiply/)                      | 南+（south-plus）论坛使用体验优化脚本。                    |                                    [GitHub](https://lu-jiejie.github.io/UserScript/south-multiply.user.js) \| [GreekFork](https://greasyfork.org/zh-CN/scripts/491807-南)                                     |    ![GitHub package.json version](https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fsouth-multiply%2Fpackage.json&style=flat&label=%20&color=%23eee)    |
-| [二次元图集网站增强](./packages/anime-site-evolved/)   | yande.re等二次元图集网站使用体验优化，如汉化图片标签等。   |                          [GitHub](https://lu-jiejie.github.io/UserScript/anime-site-evolved.user.js) \| [GreekFork](https://greasyfork.org/zh-CN/scripts/490710-二次元图片网站增强)                           |  ![GitHub package.json version](https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fanime-site-evolved%2Fpackage.json&style=flat&label=%20&color=%23eee)  |
+<table>
+  <thead>
+    <tr>
+      <th>脚本</th>
+      <th>简介</th>
+      <th>安装</th>
+      <th>版本</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><a href="./packages/bilibili-random-play/">b站分P视频随机播放</a></td>
+      <td>为B站分P视频添加随机播放功能，听歌软件怎么能没有随机播放？</td>
+      <td>
+        <a href="https://github.com/Lu-Jiejie/UserScript/blob/gh-pages/ bilibili-random-play.user.js">GitHub</a>
+        <span>|</span>
+        <a href="https://greasyfork.org/zh-CN/scripts/469248-b站分p视频随机播放 ">GreekFork</a>
+      </td>
+      <td>
+        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fbilibili-random-play%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./packages/copyable/">解除复制限制</a></td>
+      <td>解除部分网站的复制限制及小尾巴，重生之我是CV大师。</td>
+      <td>
+        <a href="https://lu-jiejie.github.io/UserScript/copyable.user.js">GitHub</a>
+        <span>|</span>
+        <a href="https://greasyfork.org/zh-CN/scripts/489501-解除复制限制">GreekFork</a>
+      </td>
+      <td>
+        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fcopyable%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./packages/south-multiply/">南x</a></td>
+      <td>南+（south-plus）论坛使用体验优化脚本。</td>
+      <td>
+        <a href="https://lu-jiejie.github.io/UserScript/south-multiply.user.js">GitHub</a>
+        <span>|</span>
+        <a href="https://greasyfork.org/zh-CN/scripts/491807-南">GreekFork</a>
+      </td>
+      <td>
+        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fsouth-multiply%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
+      </td>
+    </tr>
+    <tr>
+      <td><a href="./packages/anime-site-evolved/">二次元图集网站增强</a></td>
+      <td>yande.re等二次元图集网站使用体验优化，如汉化图片标签等。</td>
+      <td>
+        <a href="https://lu-jiejie.github.io/UserScript/anime-site-evolved.user.js">GitHub</a>
+        <span>|</span>
+        <a href="https://greasyfork.org/zh-CN/scripts/490710-二次元图片网站增强">GreekFork</a>
+      </td>
+      <td>
+        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fanime-site-evolved%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
+      </td>
+    </tr>
+  </tbody>
+
+</table>

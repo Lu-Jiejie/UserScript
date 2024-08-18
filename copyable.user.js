@@ -2,7 +2,7 @@
 // @name         解除复制限制
 // @namespace    https://github.com/LU-JIEJIE/copyable
 // @version      1.2.0
-// @author       monkey
+// @author       lu-jiejie
 // @description  解除部分网站的复制限制及小尾巴，如百度文库、CSDN、哔哩哔哩专栏等。
 // @license      MIT
 // @homepage     https://github.com/LU-JIEJIE/copyable

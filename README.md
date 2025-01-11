@@ -48,13 +48,13 @@
       </td>
     </tr>
     <tr>
-      <td><a href="./packages/anime-site-evolved/">二次元图集网站增强</a></td>
-      <td>yande.re等二次元图集网站使用体验优化，如汉化图片标签等。</td>
+      <td><a href="./packages/yande-evolved/">yande增强</a></td>
+      <td>yande网站使用体验优化，如汉化图片标签等。</td>
       <td>
         <a href="https://greasyfork.org/zh-CN/scripts/490710-二次元图片网站增强">GreekFork</a>
       </td>
       <td>
-        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fanime-site-evolved%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
+        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fyande-evolved%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
       </td>
     </tr>
     <tr>

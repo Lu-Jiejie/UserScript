@@ -18,6 +18,7 @@ try {
     cwd: packagePath,
   })
 }
+// eslint-disable-next-line unused-imports/no-unused-vars
 catch (error) {
   console.error('Failed to release package')
 }

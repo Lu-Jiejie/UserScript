@@ -1,8 +1,9 @@
 import type { Website } from '../types'
 import { GM_addStyle } from '$'
+import { generateTagsJsonUrl } from '../utils'
 
-const generalTagsTableUrl = 'https://cdn.jsdelivr.net/gh/LU-JIEJIE/UserScript@main/packages/anime-site-evolved/src/data/yande_tags_general.json'
-const copyrightTagsTableUrl = 'https://cdn.jsdelivr.net/gh/LU-JIEJIE/UserScript@main/packages/anime-site-evolved/src/data/yande_tags_copyright.json'
+const generalTagsTableUrl = generateTagsJsonUrl('yande_tags_general')
+const copyrightTagsTableUrl = generateTagsJsonUrl('yande_tags_copyright')
 
 function showImageSize() {
   GM_addStyle(`

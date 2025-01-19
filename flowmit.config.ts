@@ -1,8 +1,9 @@
 import { readdirSync } from 'node:fs'
+import { join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'flowmit'
 
-// 在scopes里填入packages文件夹下的所有包名，ts自动生成
-
 export default defineConfig({
-  scopes: readdirSync('packages'),
+  // 使用join来构建绝对路径
+  scopes: readdirSync(join(fileURLToPath(new URL('.', import.meta.url)), 'packages')),
 })

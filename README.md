@@ -12,7 +12,6 @@
       <th>脚本</th>
       <th>简介</th>
       <th>安装</th>
-      <th>版本</th>
     </tr>
   </thead>
 
@@ -23,18 +22,12 @@
       <td>
         <a href="https://greasyfork.org/zh-CN/scripts/469248-b站分p视频随机播放 ">GreekFork</a>
       </td>
-      <td>
-        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fbilibili-random-play%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
-      </td>
     </tr>
     <tr>
       <td><a href="./packages/copyable/">解除复制限制</a></td>
       <td>解除部分网站的复制限制及小尾巴，重生之我是CV大师。</td>
       <td>
         <a href="https://greasyfork.org/zh-CN/scripts/489501-解除复制限制">GreekFork</a>
-      </td>
-      <td>
-        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fcopyable%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
       </td>
     </tr>
     <tr>
@@ -43,9 +36,6 @@
       <td>
         <a href="https://greasyfork.org/zh-CN/scripts/491807-南">GreekFork</a>
       </td>
-      <td>
-        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fsouth-multiply%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
-      </td>
     </tr>
     <tr>
       <td><a href="./packages/yande-evolved/">yande增强</a></td>
@@ -53,18 +43,12 @@
       <td>
         <a href="https://greasyfork.org/zh-CN/scripts/490710-二次元图片网站增强">GreekFork</a>
       </td>
-      <td>
-        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fyande-evolved%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
-      </td>
     </tr>
     <tr>
-      <td><a href="./packages/shitaraba-evolved/">したらば论坛增强</a></td>
+      <td><a href="./packages/shitaraba-evolved/">したらば论坛体验优化</a></td>
       <td>したらば论坛增强脚本。</td>
       <td>
         <a href="https://greasyfork.org/zh-CN/scripts/504173-したらば论坛增强">GreekFork</a>
-      </td>
-      <td>
-        <img src="https://img.shields.io/github/package-json/v/Lu-Jiejie/UserScript?filename=packages%2Fshitaraba-evolved%2Fpackage.json&style=flat&label=%20&color=%23eee" alt="GitHub package.json version">
       </td>
     </tr>
   </tbody>

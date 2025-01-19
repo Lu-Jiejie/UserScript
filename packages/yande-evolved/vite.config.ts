@@ -7,7 +7,9 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
-        name: '二次元图片网站增强',
+        name: 'yande图站体验优化',
+        version: '1.0.0',
+        description: 'yande网站使用体验优化，如汉化图片标签等。',
         icon: 'https://yande.re/favicon.ico',
         namespace: 'https://github.com/LU-JIEJIE/UserScript/tree/main/packages/anime-site-evolved',
         match: ['*://yande.re/*'],

@@ -10,6 +10,6 @@ const packages = fs.readdirSync(packagesPath).map(dir => path.join(packagesPath,
 packages.forEach((pkg) => {
   console.log(`Building ${pkg}...`)
   execSync(`npm run build`, { stdio: 'inherit', cwd: pkg })
-  execSync(`cp -r ${pkg.replace(/\\/g, '/')}/dist/. dist/`, { stdio: 'inherit' })
+  // execSync(`cp -r ${pkg.replace(/\\/g, '/')}/dist/. dist/`, { stdio: 'inherit' })
   // execSync(`copy  ${pkg}\\dist\\* dist\\ /E /I /Y`, { stdio: 'inherit' })
 })

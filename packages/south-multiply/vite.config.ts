@@ -9,6 +9,8 @@ export default defineConfig({
       userscript: {
         'name': '南×',
         'author': 'lu-jiejie',
+        'version': '1.0.1',
+        'description': '南+（south-plus）论坛使用体验优化脚本。',
         'icon': 'https://bbs.imoutolove.me/favicon.ico',
         'namespace': 'npm/vite-plugin-monkey',
         'license': 'MIT',

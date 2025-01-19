@@ -7,7 +7,9 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
-        name: 'したらば论坛增强',
+        name: 'したらば论坛体验优化',
+        description: 'したらば论坛增强脚本。',
+        version: '0.0.1',
         author: 'lu-jiejie',
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'npm/vite-plugin-monkey',

@@ -9,6 +9,8 @@ export default defineConfig({
       userscript: {
         name: '解除复制限制',
         author: 'lu-jiejie',
+        description: '解除部分网站的复制限制及小尾巴，如百度文库、CSDN、哔哩哔哩专栏等。',
+        version: '1.2.0',
         namespace: 'https://github.com/LU-JIEJIE/copyable',
         homepage: 'https://github.com/LU-JIEJIE/copyable',
         license: 'MIT',

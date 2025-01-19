@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.1.0",
   "private": "true",
-  "description": "为B站分P视频添加随机播放功能",
+  "description": "为B站分P视频添加随机播放功能，听歌软件怎么能没有随机播放？",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

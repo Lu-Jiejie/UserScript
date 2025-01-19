@@ -1,9 +1,9 @@
 {
-  "name": "anime-site-evolved",
+  "name": "yande-evolved",
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "增强二次元图片网站的体验",
+  "description": "yande网站使用体验优化，如汉化图片标签等。",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

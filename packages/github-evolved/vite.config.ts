@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
-import monkey from 'vite-plugin-monkey';
+import { defineConfig } from 'vite'
+import monkey from 'vite-plugin-monkey'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -7,10 +7,14 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
-        icon: 'https://vitejs.dev/logo.svg',
-        namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.google.com/'],
+        name: '二次元图片网站增强',
+        icon: 'https://yande.re/favicon.ico',
+        namespace: 'https://github.com/LU-JIEJIE/UserScript/tree/main/packages/anime-site-evolved',
+        match: ['*://yande.re/*'],
+        author: 'lu-jiejie',
+        homepage: 'https://github.com/LU-JIEJIE/UserScript/tree/main/packages/anime-site-evolved',
+        license: 'MIT',
       },
     }),
   ],
-});
+})

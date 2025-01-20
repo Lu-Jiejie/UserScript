@@ -1,18 +1,18 @@
-import { initUI } from './ui'
-import { initSettings } from './utils/storage'
-import domainRedirect from './features/domainRedirect'
-import forceDesktop from './features/forceDesktop'
-import netdiskCheck from './features/netdiskCheck'
-import autoCompleteTasks from './features/autoCompleteTasks'
-import { seamlessLoadComment, seamlessLoadPost, seamlessLoadSearch } from './features/seamlessLoad'
-import { initSafeForWork } from './features/safeForWork'
-import imageWallDefault from './features/imageWallDefault'
-
-import settingsPanelCss from './css/settingsPanel.css?raw'
+import { GM_addStyle, GM_openInTab, GM_registerMenuCommand } from '$'
 import safeForWorkCss from './css/safeForWork.css?raw'
 import seamlessLoadCss from './css/seamlessLoad.css?raw'
+import settingsPanelCss from './css/settingsPanel.css?raw'
+import autoCompleteTasks from './features/autoCompleteTasks'
+import domainRedirect from './features/domainRedirect'
+import forceDesktop from './features/forceDesktop'
+import imageWallDefault from './features/imageWallDefault'
+import netdiskCheck from './features/netdiskCheck'
 
-import { GM_addStyle, GM_openInTab, GM_registerMenuCommand } from '$'
+import { initSafeForWork } from './features/safeForWork'
+import { seamlessLoadComment, seamlessLoadPost, seamlessLoadSearch } from './features/seamlessLoad'
+import { initUI } from './ui'
+
+import { initSettings } from './utils/storage'
 
 GM_addStyle(settingsPanelCss)
 GM_addStyle(safeForWorkCss)

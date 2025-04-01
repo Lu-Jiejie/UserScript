@@ -1,7 +1,13 @@
-import { getIconClass } from 'atom-file-icons'
-import { injectIconCss } from './icon'
-import { main } from './selector'
+import { main } from './core'
+import { isDev } from './utils'
 
-injectIconCss()
-
-main()
+if (isDev()) {
+  setTimeout(() => {
+    main()
+  }, 500)
+}
+else {
+  document.addEventListener('DOMContentLoaded', () => {
+    main()
+  })
+}

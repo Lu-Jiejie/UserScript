@@ -64,10 +64,6 @@ importers:
         version: 4.0.6(vite@5.4.0(@types/node@20.17.12))
 
   packages/github-evolved:
-    dependencies:
-      atom-file-icons:
-        specifier: ^1.0.3
-        version: 1.0.3
     devDependencies:
       typescript:
         specifier: ^5.7.2
@@ -1135,9 +1131,6 @@ packages:
   array-union@2.1.0:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
-
-  atom-file-icons@1.0.3:
-    resolution: {integrity: sha512-qUWaK3A3Qqv3yC7sjYJfr9cyFDWyPsQXFXfRfeup20MtlxHGcI+VrZwqDJgc8+bF2h0Tzb3w0rG5HtoPwfFSvw==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -3618,8 +3611,6 @@ snapshots:
   argparse@2.0.1: {}
 
   array-union@2.1.0: {}
-
-  atom-file-icons@1.0.3: {}
 
   balanced-match@1.0.2: {}
 

@@ -10,8 +10,9 @@ module.exports = antfu(
     },
   },
   {
-    rules: {
-      'no-console': 'off',
-    },
   },
+).removeRules(
+  'import/no-duplicates',
+  'import/no-self-import',
+  'no-console',
 )

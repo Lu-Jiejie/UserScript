@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
-import monkey from 'vite-plugin-monkey';
+import { defineConfig } from 'vite'
+import monkey from 'vite-plugin-monkey'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,8 +9,11 @@ export default defineConfig({
       userscript: {
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.google.com/'],
+        match: [
+          'https://www.npmjs.com/package/*',
+          'https://www.npmjs.com/search*',
+        ],
       },
     }),
   ],
-});
+})
